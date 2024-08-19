@@ -1,0 +1,25 @@
+# In the livestream URL: https://www.youtube.com/watch?v=jfKfPfyJRdk, the value after watch?v= is the ID (strip any tokens after the & symbol)
+livestream_id: jfKfPfyJRdk
+
+# port and password can be found at Tools -> Websocket Server Settings in OBS
+obs_auth:
+  host: localhost
+  port: 
+  password: 
+
+obs_scene_settings:
+  # Scene we will want to modify
+  scene_name: test scene
+  # Input names for the cases we will remove as they are chosen by chat
+  # These will show up with the same name on the UI and in the on-screen bar chart graphic
+  case_input_names:
+    - Case1
+    - Case2
+    - Case3
+    - Case4
+    - Case5
+# This script will save the graphic showing chat's choice to a file on disk
+# Create a new image input source to this image path, it will auto-update.
+selection_plot_filepath: G:\OBS Projects\demo project\plot.png
+# How fast the plot should refresh with new data
+plot_refresh_rate: 1 #milliseconds
