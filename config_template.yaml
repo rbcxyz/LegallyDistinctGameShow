@@ -8,8 +8,10 @@ obs_auth:
   password: 
 
 obs_scene_settings:
-  # Scene we will want to modify
-  scene_name: test scene
+  # Scenes in use
+  case_selection_scene_name: case select
+  case_opening_scene_name: case opening
+  case_opening_background: case opening background
   # Input names for the cases we will remove as they are chosen by chat
   # These will show up with the same name on the UI and in the on-screen bar chart graphic
   case_input_names:
