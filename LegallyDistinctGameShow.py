@@ -15,6 +15,8 @@ class LegallyDistinctGameShow:
         self.chat = chat
         self.fig = plt.figure(figsize=(7,5))
         self.figure_path = config['selection_plot_filepath']
+        if os.path.exists(self.figure_path):
+            os.remove(self.figure_path)
         self.ani = None
         self.plt_show_called = False
     
